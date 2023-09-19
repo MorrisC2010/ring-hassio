@@ -233,11 +233,10 @@ function startStream() {
         });
     });
 }
-startStream();
-//if (!('RING_REFRESH_TOKEN' in process.env) || !('RING_PORT' in process.env) || !('CAMERA_NAME' in process.env)) {
-//    console.log('Missing environment variables. Check RING_REFRESH_TOKEN, RING_PORT and CAMERA_NAME are set.');
-//    process.exit();
-//}
-//else {
-//    startStream();
-//}
+if (!('RING_REFRESH_TOKEN' in process.env) || !('RING_PORT' in process.env) || !('CAMERA_NAME' in process.env)) {
+    console.log('Missing environment variables. Check RING_REFRESH_TOKEN, RING_PORT and CAMERA_NAME are set.');
+    process.exit();
+}
+else {
+    startStream();
+}

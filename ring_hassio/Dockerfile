@@ -27,9 +27,6 @@ RUN cd / && \
     # Change directory to the project directory
     cd ring-hassio/ring_hassio && \
     
-    # Install 'dotenv' package
-    npm install dotenv && \
-    
     # Install Node.js dependencies with '--unsafe-perm' flag
     npm install --unsafe-perm && \
     
