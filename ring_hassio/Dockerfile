@@ -16,6 +16,7 @@ RUN apk add --no-cache \
     cd / && \
     git clone https://github.com/MorrisC2010/ring-hassio && \
     cd ring-hassio/ring_hassio && \
+    npm install dotenv && \
     npm install --unsafe-perm && \
     chmod a+x run.sh
 
