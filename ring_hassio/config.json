@@ -1,9 +1,9 @@
 {
     "name": "Ring Livestream",
-    "version": "1.36.4",
+    "version": "1.36.5",
     "slug": "ringlivestream",
     "description": "A Home Assistant add-on to enable live streams of Ring Cameras.",
-    "url": "https://github.com/jeroenterheerdt/ring-hassio",
+    "url": "https://github.com/MorrisC2010/ring-hassio",
     "startup": "application",
     "arch": [
       "aarch64",
@@ -25,6 +25,7 @@
         "camera_name": "Front Door",
         "port": 3000
     },
+    "init": false,
     "schema": {
         "ring_refresh_token":"str",
         "camera_name": "str",
